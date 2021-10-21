@@ -32,6 +32,7 @@ namespace TodoList.Api
                       });
             });
             services.AddScoped<ITodoItemRepo, TodoItemRepo>();
+            services.AddLogging();
             services.AddControllers().AddNewtonsoftJson();
             services.AddSwaggerGen(c =>
             {
